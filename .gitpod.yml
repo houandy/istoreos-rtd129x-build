@@ -7,5 +7,5 @@ tasks:
   - command: |
       git clone https://github.com/jjm2473/rtd129x-uboot.git rtd129x-uboot
       curl -L https://github.com/jjm2473/rtd1296_prebuilt_target/releases/download/v1.0/rtk-uboot-binary_1.tar.gz | tar -xz -C rtd129x-uboot
-      wget https://releases.linaro.org/components/toolchain/binaries/7.3-2018.05/aarch64-linux-gnu/gcc-linaro-7.3.1-2018.05-x86_64_aarch64-linux-gnu.tar.xz | tar -xz -C gcc-arm
+      wget https://releases.linaro.org/components/toolchain/binaries/7.3-2018.05/aarch64-linux-gnu/gcc-linaro-7.3.1-2018.05-x86_64_aarch64-linux-gnu.tar.xz | tar -xf -C gcc-arm
       cd rtd129x-uboot
