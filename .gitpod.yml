@@ -21,4 +21,5 @@ tasks:
       mkdir old
       mv ../*.bin ./old
       mkdir new
-      
+      rtd129x_bootcode_gen -d new -h old/hw_setting.bin -u u-boot.bin -f old/fsbl.bin
+      sh -c 'cd new; tar -cf ../bootloader.tar *'
