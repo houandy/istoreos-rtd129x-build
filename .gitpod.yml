@@ -5,7 +5,7 @@ tasks:
         flex python3 perl make grep diffutils unzip gawk subversion libz-dev libc-dev rsync
       exit
   - command: |
-      git clone https://github.com/istoreos/istoreos
+      git clone -b istoreos-21.02  https://github.com/istoreos/istoreos
       cp config.txt istoreos/.config
       cd istoreos
       ./scripts/feeds update -a
