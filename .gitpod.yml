@@ -16,7 +16,7 @@ tasks:
       mkdir img_tools && tar -xzf rtd129x_img_tools-linux_x86_64.tar.gz -C img_tools
       export PATH=$PATH:/workspace/istoreos-rtd129x-build/img_tools
       cd rtd129x-uboot
-      make CROSS_COMPILE="aarch64-linux-gnu-" rtd1296_qa_NAS_config
+      make CROSS_COMPILE="aarch64-linux-gnu-" rtd1296_emmc_bananapi_defconfig
       make CROSS_COMPILE="aarch64-linux-gnu-" V=s
       mkdir old
       mv ../*.bin ./old
