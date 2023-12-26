@@ -20,7 +20,7 @@ tasks:
       make CROSS_COMPILE="aarch64-linux-gnu-" V=s
       mkdir old
       mv ../*.bin ./old
-      mv -rf ../129* ./
+      cp -Rf ../129* ./
       mkdir new new5 new6
       rtd129x_bootcode_gen -d new -h old/hw_setting.bin -u u-boot.bin -f old/fsbl.bin
       rtd129x_bootcode_gen -d new5 -h 1295/hw_setting.bin -u u-boot.bin -f 1295/fsbl.bin
